@@ -1,0 +1,61 @@
+input[type="text"]{
+    background: none;
+    margin: 20px auto;
+    text-align: left;
+    border: 3px solid black;
+    padding: 10px 5px;
+    width: 220px;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.25px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url(tableimg.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+}
+input[type="Submit"]{
+    background:black;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid black;
+    padding: 10px 5px;
+    width: 100px;
+    outline: none;
+    color:white;
+    border-radius: 10px;
+    transition: 0.25px;
+}
+input[type="Submit"]:hover{
+    background: grey ;
+}
+input[type="button"]{
+    background: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid black;
+    padding: 10px 5px;
+    width: 100px;
+    outline: none;
+    color:black;
+    border-radius: 10px;
+    transition: 0.25px;
+}
+input[type="button"]:focus{
+    background: gray;
+}
+.button1:hover{
+    background: yellow;
+}
+.button2:hover{
+    background: blue;
+}
+.button3:hover{
+    background: green;
+}
+.button4:hover{
+    background: red;
+}

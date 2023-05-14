@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="admin.css">
+  </head>
+  <body>
+    <script type="text/javascript">
+      function store() {
+          var text = document.getElementById("my_text").value;
+          sessionStorage.setItem('text',text)
+      }
+    </script>
+    <form action="Home.html"  onsubmit="store()">
+       <h1>Write the quote you want to write </h1>
+      <input type="text" id="my_text" /> 
+      <input type="submit" /> <br> <br>
+      <input class="button1" type="button" onclick="sessionStorage.setItem('color','yellow');" value="Yellow" />
+      <input class="button2" type="button" onclick="sessionStorage.setItem('color','blue');" value="Blue"/>
+      <input class="button3" type="button" onclick="sessionStorage.setItem('color','green');" value="Green"/> 
+      <input class="button4" type="button" onclick="sessionStorage.setItem('color','red');" value="Red"/>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Register now
+        </title>
+        <link rel="stylesheet" href="Registerstyle.css">
+        <script type="text/javascript">
+            function validateForm(){
+                var valid = true;
+                if(document.inputForm.name.value==""){
+                    alert("Name is empty");
+                    document.inputForm.name.focus();
+                    valid=false;
+                }
+                else if(document.inputForm.email.value==""){
+                    alert("Email is empty");
+                    document.inputForm.email.focus();
+                    valid=false; 
+                }
+                else if( (document.inputForm.email.value.indexOf("@")==-1) || (document.inputForm.email.value.indexOf(".")==-1) ){
+                   alert("Please Enter valid email, e.g:info@yahoo.com");
+                   document.inputForm.email.focus();
+                   valid=false; }
+                
+                else if(document.inputForm.dateofbirth.value==""){
+                    alert("Please enter your date of birth");
+                    document.inputForm.dateofbirth.focus();
+                    valid=false;
+                }
+                else if(document.inputForm.gender.value==""){
+                    alert("Please choose your gender");
+                    document.inputForm.gender.focus();
+                    valid=false;
+                }
+                else if(document.inputForm.username.value==""){
+                    alert("username is empty");
+                    document.inputForm.username.focus();
+                    valid=false;
+                } 
+                else if(document.inputForm.password.value==""){
+                    alert("password is empty");
+                    document.inputForm.password.focus();
+                    valid=false;
+                }
+                else if(document.inputForm.confirmpassword.value==""){
+                    alert("Confirmation password is empty");
+                    document.inputForm.confirmpassword.focus();
+                    valid=false;
+                }
+                else if(document.inputForm.password.value!=document.inputForm.confirmpassword.value){
+                    alert("password doesnt match");
+                    document.inputForm.confirmpassword.focus();
+                    valid=false;
+                }
+                if (valid==true){
+                   alert("You have registered successfully! Our team will contact you soon");
+                } 
+                return valid;
+            }
+        </script>
+    </head>
+    <body>
+        <form class="box" name= "inputForm" onSubmit="return validateForm()" >
+            <h1>
+                Register
+            </h1>
+            <div class="data">
+              Name  <input type="text" name="name"><br>
+              Email  <input type="text" name="email"><br>
+              Date of birth  <input type="text" name="dateofbirth"><br>
+              <input type="radio" name="gender" value="male"> Male<br><br>
+              <input type="radio" name="gender" value="female">Female<br><br>
+              Username  <input type="text" name="username"><br>
+              Password  <input type="password" name="password"><br>
+              Confirm Password  <input type="password" name="confirmpassword"><br>
+              <input type="submit">
+            </div>
+            <div class="loglink">
+                Alread have an acount <span>&#63;</span>
+                <a href="login.html"> Login </a>
+            </div>
+        </form>
+    </body>
+</html>

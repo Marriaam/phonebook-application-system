@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(tableimg.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+}
+th{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding:0;
+}
+.links {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+    text-align: right;
+}
+img[src*="logo.jpeg"] {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    width: 150px;
+    height: 100px;
+  }
+nav{
+    height: 100px;
+}

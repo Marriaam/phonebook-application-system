@@ -1,0 +1,58 @@
+.links {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+    text-align: right;
+}
+img[src*="logo.jpeg"] {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    width: 150px;
+    height: 100px;
+  }
+nav{
+    height: 100px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url(tableimg.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+}
+h1{
+    color: #a83232;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+ }
+ 
+.box{
+    width: 500px;
+    padding: 30px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(110, 116, 113, 0.4);
+    text-align: center; 
+}
+.box input[type="submit"]{
+    display:inline;
+    border: 0;
+    background: none;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    border: 3px solid #a83232;
+    padding: 14px ;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0.25px;
+    cursor: pointer;
+}
+.box input[type="submit"]:hover{
+    background: rgb(196, 56, 56);
+}
